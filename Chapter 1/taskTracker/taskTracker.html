@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-box">
+        <h2 class="slds-section-title--divider">Task Tracker</h2>
+        <div>
+            <lightning-input label="Subject" value={subject} onchange={handleSubjectChange}></lightning-input>
+        </div>
+        <div>
+            <lightning-input label="Task Description" value={taskDescription} onchange={handleTaskDescriptionChange}></lightning-input>
+        </div>
+        <div>
+            <lightning-input label="Due Date" type="date" value={dueDate}  onchange={handleDueDateChange}></lightning-input>
+        </div>
+        <div class="add-task-button">
+            <lightning-button label="Add Task" onclick={handleAddTask}></lightning-button>
+        </div>
+    </div>
+</template>
